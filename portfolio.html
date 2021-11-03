@@ -5,125 +5,197 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>"Портфолио"</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
 
   <body>
-    <header>
-      <a href="">WebStudio</a>
+    <header class="header">
+      <a href="" class="logo-header">
+        <span class="web-header-first-part">Web</span>
+        <span class="web-header-second-part">Studio</span></a
+      >
       <nav>
-        <ul>
+        <ul class="site-nav">
           <li><a href="./index.html">cтудия</a></li>
           <li><a href="">портфолио</a></li>
           <li><a href="">контакты</a></li>
         </ul>
       </nav>
+
+      <ul class="contacts">
+        <li><a href="mailto:info@devstudio.com">info@devstudio.com></a></li>
+        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      </ul>
     </header>
     <main>
       <section>
         <h1 hidden>Фильтр</h1>
-      <ul>
-        <li><button type="button">Все</button></li>
-        <li><button type="button">Веб-сайты</button></li>
-        <li><button type="button">Приложения</button></li>
-        <li><button type="button">Дизайн</button></li>
-        <li><button type="button">Маркетинг</button></li>
-      </ul>
+        <ul class="portfolio-filter">
+          <li>
+            <button type="button" class="portfolio-filter-button">Все</button>
+          </li>
+          <li>
+            <button type="button" class="portfolio-filter-button">
+              Веб-сайты
+            </button>
+          </li>
+          <li>
+            <button type="button" class="portfolio-filter-button">
+              Приложения
+            </button>
+          </li>
+          <li>
+            <button type="button" class="portfolio-filter-button">
+              Дизайн
+            </button>
+          </li>
+          <li>
+            <button type="button" class="portfolio-filter-button">
+              Маркетинг
+            </button>
+          </li>
+        </ul>
 
-      <ul>
-        <h2 hidden>Наши работы<h2>
-        <li>
-          <a href="./second.html" target="_blank" rel="noofener noreferer"> 
-            <img src="./images/woman_and_man.jpg" 
-            width="370"
-            height="294"
-            alt="женщины_и_мужчина"></a>
-          <h5>Технокряк</h5>
-          <p>Веб-сайт</p>
-        </a>
-        </li>
-        <li>
-          <img src="./images/basketball.jpg"
-            width="370"
-            height="294"
-            alt="баскетбол"
-          />
-          <h5>Постер <span lang="en">Orlean vs Golden Star</span></h5>
-          <p>Дизайн</p>
-        </li>
-        <li>
-          <img src="./images/seafood.jpg"
-            width="370"
-            height="294"
-            alt="ресторан"
-          />
-          <h5>Ресторан <span lang="en">Seafood</span></h5>
-          <p>Приложение</p>
-        </li>
-        <li>
-          <img src="./images/headphones.jpg"
-            width="370"
-            height="294"
-            alt="наушники"
-          />
-          <h5>Проект <span lang="en">Prime</span></h5>
-          <p>Маркетинг</p>
-        </li>
-        <li>
-          <img src="./images/two_boxes.jpg"
-            width="370"
-            height="294"
-            alt="коробочки"
-          />
-          <h5>Проект<span lang="en">Boxes</span></h5>
-          <p>Приложение</p>
-        </li>
-        <li>
-          <img src="./images/monitor.jpg"
-            width="370"
-            height="294"
-            alt="монитор"
-          />
-          <h5><span lang="en">Inspiration has no Borders</span></h5>
-          <p>Веб-сайт</p>
-        </li>
-        <li>
-          <img src="./images/open_book.jpg"
-            width="370"
-            height="294"
-            alt="книга"
-          />
-          <h5>Издание<span lang="en">Limited Edition</span></h5>
-          <p>Дизайн</p>
-        </li>
-        <li>
-          <img src="./images/label.jpg" width="370" height="294" alt="лейбл" />
-          <h5>Проект <span lang="en">LAB</span></h5>
-          <p>Маркетинг</p>
-        </li>
-        <li>
-          <img
-            src="./images/laptop_portfolio.jpg"
-            width="370"
-            height="294"
-            alt="ноутбук"
-          />
-          <h5>Проект <span lang="en">Prime</span></h5>
-          <p>Приложение</p>
-        </li>
-      </ul>
+        <ul>
+          <li class="work-examples">
+            <a href="./second.html" target="_blank" rel="noofener noreferer">
+              <img
+                src="./images/woman_and_man.jpg"
+                width="370"
+                height="294"
+                alt="женщины_и_мужчина"
+              />
+            </a>
+            <h5 class="work-example-name">Технокряк</h5>
+            <p class="work-example-type">Веб-сайт</p>
+          </li>
+          <li>
+            <img
+              src="./images/basketball.jpg"
+              width="370"
+              height="294"
+              alt="баскетбол"
+            />
+            <h5 class="work-example-name">
+              Постер <span lang="en">Orlean vs Golden Star</span>
+            </h5>
+            <p class="work-example-type">Дизайн</p>
+          </li>
+          <li>
+            <img
+              src="./images/seafood.jpg"
+              width="370"
+              height="294"
+              alt="ресторан"
+            />
+            <h5 class="work-example-name">
+              Ресторан <span lang="en">Seafood</span>
+            </h5>
+            <p class="work-example-type">Приложение</p>
+          </li>
+          <li>
+            <img
+              src="./images/headphones.jpg"
+              width="370"
+              height="294"
+              alt="наушники"
+            />
+            <h5 class="work-example-name">
+              Проект <span lang="en">Prime</span>
+            </h5>
+            <p class="work-example-type">Маркетинг</p>
+          </li>
+          <li>
+            <img
+              src="./images/two_boxes.jpg"
+              width="370"
+              height="294"
+              alt="коробочки"
+            />
+            <h5 class="work-example-name">
+              Проект<span lang="en">Boxes</span>
+            </h5>
+            <p class="work-example-type">Приложение</p>
+          </li>
+          <li>
+            <img
+              src="./images/monitor.jpg"
+              width="370"
+              height="294"
+              alt="монитор"
+            />
+            <h5 class="work-example-name">
+              <span lang="en">Inspiration has no Borders</span>
+            </h5>
+            <p class="work-example-type">Веб-сайт</p>
+          </li>
+          <li>
+            <img
+              src="./images/open_book.jpg"
+              width="370"
+              height="294"
+              alt="книга"
+            />
+            <h5 class="work-example-name">
+              Издание<span lang="en">Limited Edition</span>
+            </h5>
+            <p class="work-example-type">Дизайн</p>
+          </li>
+          <li>
+            <img
+              src="./images/label.jpg"
+              width="370"
+              height="294"
+              alt="лейбл"
+            />
+            <h5 class="work-example-name">Проект <span lang="en">LAB</span></h5>
+            <p class="work-example-type">Маркетинг</p>
+          </li>
+          <li>
+            <img
+              src="./images/laptop_portfolio.jpg"
+              width="370"
+              height="294"
+              alt="ноутбук"
+            />
+            <h5 class="work-example-name">
+              Проект <span lang="en">Prime</span>
+            </h5>
+            <p class="work-example-type">Приложение</p>
+          </li>
+        </ul>
       </section>
     </main>
-    <footer>
-      <a href="">WebStudio</a>
-      <address>
+    <footer class="footer">
+      <a href="" class="logo-footer">
+        <span class="web-footer-first-part">Web</span>
+        <span class="web-footer-second-part">Studio</span></a
+      >
+      <address class="adress">
         <ul>
           <li>
-            <a href="https://goo.gl/maps/dDXSpFZrCDTYoZzZ8"
+            <a href="https://goo.gl/maps/dDXSpFZrCDTYoZzZ8" class="map"
               >бул. Леси Украинки, 26, Киев, 02000
             </a>
           </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com></a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mailto"
+              >info@devstudio.com></a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>

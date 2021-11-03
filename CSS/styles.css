@@ -1,16 +1,3 @@
-.body {
-    font-family: roboto;
-    list-style-type: none; 
-    padding-left: 0; 
-    background-color: #E5E5E5
-}
-
-<style type="text/css">
-  ul {
-    list-style-type: none;
-  }
-</style>
-
 /*main colors*/
 :root {
   --general_text_color: #212121;
@@ -19,9 +6,19 @@
   --background_color: #2f303a;
   --white_color: #FFFFFF;
   --secondary_background_color: #F5F4FA;
-
 }
 
+.body {
+    font-family: roboto, sans-serif;
+    padding-left: 0; 
+    background-color: #E5E5E5
+}
+
+* {
+  list-style: none;
+}
+
+/*INDEX.HTML*/
 /*header`s styles*/
 /* Logo */
 
@@ -30,31 +27,31 @@
 }
     
 
-.logo_header {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  text-decoration: none;
+.logo-header {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+
+.web-header-first-part {
+    color: var(--links_and_buttons_color);
+    margin-right: -6px;
 }
 
-.web_header_first_part {
-  color: var(--links_and_buttons_color);
-  margin-right: -6px;
-}
-
-.web_header_second_part {
-  color: var(--general_text_color);
+.web-header-second-part {
+    color: var(--general_text_color);
 }
 
 /*navigation*/
 .site-nav > li > a {
-  color: var(--general_text_color);
-  font-family: roboto;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+    color: var(--general_text_color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
 }
 
 .site-nav a:hover,
@@ -67,117 +64,135 @@
 /*contacts*/
 
 .contacts a {
-  color: var(--secondary_text_color);
-  font-family: roboto;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
+    color: var(--secondary_text_color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-decoration: none;
 }
-
 
 /*Main`s styles*/
 
 
-/*herosection*/
+/*hero section*/
 
-.hero_section {
+.hero-section {
   background-color: var(--background_color);
-}
-
-.hero_name {
-    color: #FFFFFF;
-    font-family: roboto;
-    weight: 900;
-    font style:bold;
-    font size: 44px;
-    line height: 60px;
-    line height: 116%
+  text-align: center;
   }
 
-  .order_service {
+.hero-title {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 0.06em;
+    }
+
+  .order-service {
     background-color: var(--links_and_buttons_color);
   }
 
-  .order_service_title {
+  .order-service-title {
     color: var(--white_color);
     font-family: roboto;
     weight: 700;
     font style:bold;
     font size: 16px;
-    line height: 30px;
+    line height: 1.9;
     line height: 160%;
+    text-align: center;
+    }
 
+
+    /*feautures section*/
+
+.feautures-title {
+    color: var(--general_text_color);
+    font-size: 14px;
+    font-style: bold;
+    line height: 1.14;
+    align: left;   
   }
+
+.feautures-text {
+    color: var(--secondary_text_color);
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+
 /*what_we_do_section*/
 
-.what_we_do_section{
+.what-we-do-section{
     background-color: var(--secondary_background_color);
 
 }
 
-.what_we_do_title {
+.what-we-do-title {
     color: var(--general_text_color);
-    font style: Bold;
-    font size: 36px;
-    line height: 42px;
-    line height: 100%;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: Center;
+}
+
+/*our team sectiom*/
+
+.our_team_section_title {
+    color: var(--general_text_color);
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: Center;
+}
+
+.our_team_section p {
+    color: var(--secondary_text_color);
+    font-style: regular;
+    font-size: 16px;
+    line-height: 1.19;
+    line-height: 100%
     align: Center
+    vertical-align: Top
+    letter-spacing: 3%
 }
-
-/*feautures*/
-
-.feautures_title {
-  color: var(--general_text_color);
-  font-size: 14px;
-  font-style: bold;
-  line height: 16px
-  line-height: 100%
-  align: Left   
-  }
-
-.feautures_text {
-  color: var(--secondary_text_color);
-  font style: Regular;
-  font size: 14px;
-  line height: 24px;
-  line height: 146%;
-  align: Left;
-}
-
-
 /*Footer`s styles*/
 
 /*logo in footer*/
 
 .footer {
-  background-color: var(--background_color);
+    background-color: var(--background_color);
 }
 
-.logo_footer {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  text-decoration: none;
+.logo-footer {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
 }
 
-.web_footer_first_part {
+.web-footer-first-part {
   color: var(--links_and_buttons_color);
   margin-right: -6px;
 }
 
-.web_footer_second_part {
+.web-footer-second-part {
   color: #ffffff;
 }
 .adress a {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration: none;
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
 }
 
 .map {
@@ -186,4 +201,55 @@
 
 .mailto,
 .tel {
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mailto:hover,
+.tel:hover,
+.mailto:focus,
+.tel:focus {
+  color: var(--links_and_buttons_color);
+}
+
+
+  /*PORTFOLIO.HTML*/
+
+  /*portfolio header */
+
+.portfolio-filter-button {
+  background-color: var(--secondary_background_color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+.portfolio-filter-button:hover {
+  background-color:var(--links_and_buttons_color) ;
+  color:var(--white_color);
+  text-align: center;
+}
+
+/*portfolio mail*/
+
+.work-example-name {
+  color: var(--general_text_color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  }
+
+.work-example-type {
+  color: var(--secondary_text_color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
