@@ -11,7 +11,7 @@
 .body {
     font-family: roboto, sans-serif;
     padding-left: 0; 
-    background-color: #E5E5E5
+    background-color: var(--white_color)
 }
 
 * {
@@ -93,9 +93,6 @@
 
   .order-service {
     background-color: var(--links_and_buttons_color);
-  }
-
-  .order-service-title {
     color: var(--white_color);
     font-family: roboto;
     weight: 700;
@@ -104,6 +101,7 @@
     line height: 1.9;
     line height: 160%;
     text-align: center;
+    cursor: pointer;
     }
 
 
